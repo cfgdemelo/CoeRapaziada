@@ -26,30 +26,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton whats1 = (ImageButton) findViewById(R.id.shareWhats1);
-        ImageButton whats2 = (ImageButton) findViewById(R.id.shareWhats2);
-        ImageButton whats3 = (ImageButton) findViewById(R.id.shareWhats3);
-        ImageButton whats4 = (ImageButton) findViewById(R.id.shareWhats4);
-        ImageButton whats5 = (ImageButton) findViewById(R.id.shareWhats5);
-        ImageButton whats6 = (ImageButton) findViewById(R.id.shareWhats6);
-        ImageButton whats7 = (ImageButton) findViewById(R.id.shareWhats7);
-        ImageButton whats8 = (ImageButton) findViewById(R.id.shareWhats8);
-        ImageButton generic1 = (ImageButton) findViewById(R.id.shareGeneric1);
-        ImageButton generic2 = (ImageButton) findViewById(R.id.shareGeneric2);
-        ImageButton generic3 = (ImageButton) findViewById(R.id.shareGeneric3);
-        ImageButton generic4 = (ImageButton) findViewById(R.id.shareGeneric4);
-        ImageButton generic5 = (ImageButton) findViewById(R.id.shareGeneric5);
-        ImageButton generic6 = (ImageButton) findViewById(R.id.shareGeneric6);
-        ImageButton generic7 = (ImageButton) findViewById(R.id.shareGeneric7);
-        ImageButton generic8 = (ImageButton) findViewById(R.id.shareGeneric8);
-        ImageButton play1 = (ImageButton) findViewById(R.id.play1);
-        ImageButton play2 = (ImageButton) findViewById(R.id.play2);
-        ImageButton play3 = (ImageButton) findViewById(R.id.play3);
-        ImageButton play4 = (ImageButton) findViewById(R.id.play4);
-        ImageButton play5 = (ImageButton) findViewById(R.id.play5);
-        ImageButton play6 = (ImageButton) findViewById(R.id.play6);
-        ImageButton play7 = (ImageButton) findViewById(R.id.play7);
-        ImageButton play8 = (ImageButton) findViewById(R.id.play8);
+        ImageButton whats1 = findViewById(R.id.shareWhats1);
+        ImageButton whats2 = findViewById(R.id.shareWhats2);
+        ImageButton whats3 = findViewById(R.id.shareWhats3);
+        ImageButton whats4 = findViewById(R.id.shareWhats4);
+        ImageButton whats5 = findViewById(R.id.shareWhats5);
+        ImageButton whats6 = findViewById(R.id.shareWhats6);
+        ImageButton whats7 = findViewById(R.id.shareWhats7);
+        ImageButton whats8 = findViewById(R.id.shareWhats8);
+        ImageButton generic1 = findViewById(R.id.shareGeneric1);
+        ImageButton generic2 = findViewById(R.id.shareGeneric2);
+        ImageButton generic3 = findViewById(R.id.shareGeneric3);
+        ImageButton generic4 = findViewById(R.id.shareGeneric4);
+        ImageButton generic5 = findViewById(R.id.shareGeneric5);
+        ImageButton generic6 = findViewById(R.id.shareGeneric6);
+        ImageButton generic7 = findViewById(R.id.shareGeneric7);
+        ImageButton generic8 = findViewById(R.id.shareGeneric8);
+        ImageButton play1 = findViewById(R.id.play1);
+        ImageButton play2 = findViewById(R.id.play2);
+        ImageButton play3 = findViewById(R.id.play3);
+        ImageButton play4 = findViewById(R.id.play4);
+        ImageButton play5 = findViewById(R.id.play5);
+        ImageButton play6 = findViewById(R.id.play6);
+        ImageButton play7 = findViewById(R.id.play7);
+        ImageButton play8 = findViewById(R.id.play8);
 
         View coe1 = findViewById(R.id.coe1);
         View coe2 = findViewById(R.id.coe2);
@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdView mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
