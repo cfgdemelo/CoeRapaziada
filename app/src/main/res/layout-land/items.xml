@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cfgdemelo.coerapaziada.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe1">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play1"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_1"
+            android:layout_toRightOf="@id/play1"
+            android:layout_toEndOf="@id/play1"
+            android:layout_toLeftOf="@id/shareWhats1"
+            android:layout_toStartOf="@id/shareWhats1"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats1"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric1"
+            android:layout_toStartOf="@id/shareGeneric1"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric1"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe2">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play2"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_2"
+            android:layout_toRightOf="@id/play2"
+            android:layout_toEndOf="@id/play2"
+            android:layout_toLeftOf="@id/shareWhats2"
+            android:layout_toStartOf="@id/shareWhats2"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric2"
+            android:layout_toStartOf="@id/shareGeneric2"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe3">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play3"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_3"
+            android:layout_toRightOf="@id/play3"
+            android:layout_toEndOf="@id/play3"
+            android:layout_toLeftOf="@id/shareWhats3"
+            android:layout_toStartOf="@id/shareWhats3"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats3"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric3"
+            android:layout_toStartOf="@id/shareGeneric3"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric3"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe4">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play4"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_4"
+            android:layout_toRightOf="@id/play4"
+            android:layout_toEndOf="@id/play4"
+            android:layout_toLeftOf="@id/shareWhats4"
+            android:layout_toStartOf="@id/shareWhats4"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats4"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric4"
+            android:layout_toStartOf="@id/shareGeneric4"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric4"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe5">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play5"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_5"
+            android:layout_toRightOf="@id/play5"
+            android:layout_toEndOf="@id/play5"
+            android:layout_toLeftOf="@id/shareWhats5"
+            android:layout_toStartOf="@id/shareWhats5"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats5"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric5"
+            android:layout_toStartOf="@id/shareGeneric5"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric5"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe6">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play6"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_6"
+            android:layout_toRightOf="@id/play6"
+            android:layout_toEndOf="@id/play6"
+            android:layout_toLeftOf="@id/shareWhats6"
+            android:layout_toStartOf="@id/shareWhats6"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats6"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric6"
+            android:layout_toStartOf="@id/shareGeneric6"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric6"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/coe7">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play7"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_7"
+            android:layout_toRightOf="@id/play7"
+            android:layout_toEndOf="@id/play7"
+            android:layout_toLeftOf="@id/shareWhats7"
+            android:layout_toStartOf="@id/shareWhats7"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats7"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric7"
+            android:layout_toStartOf="@id/shareGeneric7"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric7"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/coe8">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_media_play"
+            android:id="@+id/play8"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="@string/level_8"
+            android:layout_toRightOf="@id/play8"
+            android:layout_toEndOf="@id/play8"
+            android:layout_toLeftOf="@id/shareWhats8"
+            android:layout_toStartOf="@id/shareWhats8"/>
+
+        <ImageButton
+            android:id="@+id/shareWhats8"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whats"
+            android:contentDescription="@string/level_1"
+            android:layout_toLeftOf="@id/shareGeneric8"
+            android:layout_toStartOf="@id/shareGeneric8"/>
+
+        <ImageButton
+            android:id="@+id/shareGeneric8"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/level_1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>
