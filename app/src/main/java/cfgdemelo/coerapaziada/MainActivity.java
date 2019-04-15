@@ -1,9 +1,5 @@
 package cfgdemelo.coerapaziada;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private int countCoe = 0;
     private static final String TAG = "MainActivity";
-    private InterstitialAd mInterstitialAd;
     private long mLastBackPress;
     private static final long mBackPressThreshold = 3500;
 
@@ -269,15 +264,6 @@ public class MainActivity extends AppCompatActivity {
                 rapaziada8();
             }
         });
-
-        AdView mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-        mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4492637372007210/9313602881");
-        AdRequest.Builder adRequestBuilder = new AdRequest.Builder();
-        mInterstitialAd.loadAd(adRequestBuilder.build());
     }
 
     private void shareWhats() {
@@ -304,8 +290,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.success(this, "Aquecimento", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada2() {
@@ -314,8 +298,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.info(this, "Tá ficando bom", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada3() {
@@ -324,8 +306,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.normal(this, "Tá aumentando...", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada4() {
@@ -334,8 +314,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.warning(this, "Cuidado...", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada5() {
@@ -344,8 +322,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.warning(this, "COÉ", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada6() {
@@ -354,8 +330,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.warning(this, "C O É", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada7() {
@@ -364,8 +338,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.warning(this, "R A P A Z I A D A", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     private void rapaziada8() {
@@ -374,8 +346,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toasty.error(this, "HUEHUEHUEHUEHEUEHUE", R.drawable.myavatar).show();
         countCoe++;
-
-        checkCountCoe(countCoe);
     }
 
     @Override
@@ -383,17 +353,9 @@ public class MainActivity extends AppCompatActivity {
         long currentTime = System.currentTimeMillis();
         if (Math.abs(currentTime - mLastBackPress) > mBackPressThreshold) {
             mLastBackPress = currentTime;
-            mInterstitialAd.show();
             Toasty.warning(this, "Coé, pressione novamente pra sair!", R.drawable.myavatar).show();
         } else {
-            mInterstitialAd.show();
             super.onBackPressed();
-        }
-    }
-
-    private void checkCountCoe(int countCoe) {
-        if (countCoe == 10 || countCoe == 18 || countCoe == 25 || countCoe == 36) {
-            mInterstitialAd.show();
         }
     }
 }
